@@ -1,0 +1,26 @@
+/* 
+Postion
+--static=> defult
+--reletive //depand on its self
+--absolute 
+--fixed
+--Sticky
+*/
+* {
+  margin: 0;
+}
+body{
+  min-height: 2000px;
+}
+div {
+  color: white;
+  background-color: red;
+  padding:10px;
+  margin: 10px 0;
+  position:sticky;
+  top: 10px;
+}
+
+ /* 
+how add icon from font awesome web free?    
+     */

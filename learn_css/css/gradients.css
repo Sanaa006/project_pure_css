@@ -1,0 +1,28 @@
+/* gradients */
+*{
+    box-sizing: border-box;
+}
+div{
+    width: 500px;
+    height: 400px;
+    position: relative;
+    background-size: cover;
+    background-image: url(../pexels-vera-cires-41227.jpg);
+    margin: 49px auto;
+    color: white;
+}
+h1{
+    z-index: 200;
+}
+div::after{
+    content: "";
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.255);
+}
+div::shadow{
+    content: "";
+}

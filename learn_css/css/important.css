@@ -1,0 +1,7 @@
+/*the !important Declaration */
+.one{
+    background-color: #eee !important;
+    width: 100px;
+    height: 100px;
+    
+}

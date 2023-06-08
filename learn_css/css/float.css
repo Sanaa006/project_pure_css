@@ -1,0 +1,15 @@
+.parant{
+    padding: 10px;
+    background-color: red;
+}
+.parant div{
+    padding-top:10px ;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    float: left;
+    width:25%;
+}
+.clear{
+    clear:both
+}

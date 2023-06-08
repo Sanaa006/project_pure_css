@@ -1,0 +1,8 @@
+/* syntics: H-shadows | V-shadows | Blur | spread | color | insetd */
+div{
+    padding:20px;
+    background-color: #eee;
+    margin: 20px auto;
+    width: 500px;
+    box-shadow:0 0 0 0 #000 inset,0 0 0 0 #fff inset;
+}

@@ -1,0 +1,113 @@
+/* 
+Transform 2D
+-scale for element stretched  , Defult value => transform: scale (1)
+-rotate for element rotation , Defult value => transform: rotate (0deg)
+=== Unit of the corner ====
+--deg => Degrees
+--red => Radians
+--grad => gradian
+--turn => 1,2,3... Turn
+===========================
+--- note----
+--if there are two attribute for transform put in same transform
+------------
+-Translate(10deg,10deg) 
+-Skew(10deg,10deg)
+-----note----
+-Matrix
+--syntax => matrix(scaleX(),skewX(),skewY(),scaleY(),translateX(),translateY())
+--this proprity same transform and put all attrebute but this function deffecalt in arrangement
+--------
+-transform-origin
+-Syntax
+-Defult values => 50% 50% 0
+-2D Transform => transform( X , Y )
+-3D Transform => transform( X , Y , Z )
+---X-Axis
+-CSS Units [px, em , rem]
+-%
+-keywords =>[left(0%),center(50%),right(100%).
+---Y-Axis
+-CSS Units [px, em , rem]
+-%
+-keywords =>[top(0%),center(50%),bottom(100%).
+===================
+3D Transform
+--rotate
+--translate 
+--perspactive
+--perspactive-origin
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shape{
+    width: 300px;
+    font-weight: bold;
+    height: 300px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.shape::before{
+    content: "";
+    width: 2px;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    left:-10px ;
+    background-color: #34333394;
+}
+.shape::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -12px;
+    left: 0 ;
+    background-color: #34333394;
+}
+.shape .x-axis{
+    position: absolute;
+    bottom: -20px;
+    z-index: 88;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #fff;
+}
+.shape .y-axis{
+    position: absolute;
+    left: -20px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    top: 50%;
+    z-index: 88;
+    background-color: #fff;
+    margin-top: -20px;
+    -webkit-text-orientation: mixed;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+}
+.shape div{
+    width: 90%;
+    height: 90%;
+    font-size: 1.3em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border-radius: 20px;
+    */background-color: rgba(255, 0, 0, 0.346);
+    
+}

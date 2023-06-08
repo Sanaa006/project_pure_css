@@ -1,0 +1,19 @@
+div{
+    text-indent: -9999px;
+    line-height: 0; /* Collapse the original line */
+    background-color: #eee !important;
+    color: black !important;
+    padding: 20px;
+    border: none !important;
+    font-size: 20px !important;
+    font-weight: bold;
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+div:after {
+    content: "Elzero";
+    text-indent: 0;
+    display: block;
+    line-height: initial; /* New content takes up original line height */
+  }

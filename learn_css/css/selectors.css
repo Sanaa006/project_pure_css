@@ -1,0 +1,50 @@
+/* Css Selector
+-* : targate for all elements   
+- Elemant name : [div. h1 , p , li .....]
+- Element other Element : p div maen all div inside p unitl if was inside otherelement 
+-.class-name
+-#id-name
+- .parent .child and possible there was element between
+- .class-one.class-two target element have both class
+- .class-one div
+- element.class-name [p.class-one]
+- .perant > .child => child Direct 
+- Element + other Element => [div + p]
+- Element ~ other Element => [div ~ p]
+- [Attrebute]
+- Element [Attrebute]
+- [Attrebute=value]
+- Element[Attrebute=value] => inpur[type=search]
+========================
+==== Selector part3 ====
+========================
+- :First-child
+- :last-child
+- :first-of-type
+- :last-of-type
+- :only-child
+=======================
+==== Selector part4====
+=======================
+- :not( .class-name )
+- :nth-child(n)
+- :nth-last-child(n)
+- :nth-of-type(n)
+- :nth-last-of-type(n)
+=======================
+==== Selector part5====
+=======================
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"]:checked+label{
+    color: red;
+}
+
+

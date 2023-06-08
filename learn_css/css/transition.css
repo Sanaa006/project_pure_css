@@ -1,0 +1,35 @@
+/* transition 
+- Duration 
+- Proprety 
+- Delay
+- Timing function
+*/
+*{
+ 
+    box-sizing: border-box;
+}
+.one{
+    background-color: #aaa;
+    width: 100px;
+    height: 300px;
+    font-size: 3rem;
+/*     transition-duration: 5s;  
+    background-image: linear-gradient(to left,rgb(179, 22, 11), rgb(9, 3, 93));
+    transition-property:width,height;
+    transition-timing-function: linear;
+ */
+    transition: all 3s .5s linear;
+}
+.one:hover{
+    height: 200px;
+    width: 900px;
+}
+p{
+    transition-duration: 3s;
+    transition-property: all;
+}
+.one:hover p {
+    position: relative;
+   margin-left: 100px;
+}
+

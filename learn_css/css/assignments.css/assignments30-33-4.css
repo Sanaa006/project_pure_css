@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+caption{
+    margin: 20px;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+table{
+    margin: auto;
+    width: 70%;
+    font-size: 1.3em;
+    border-spacing: 0px;
+    background-color: #eeeeee;
+    border-bottom: solid 3px #009688;
+    
+}
+td{
+    padding: 20px;
+    border: solid white 1px;
+    text-align: center;
+}
+thead td{
+    color: white;
+    font-weight: bold;
+    background-color: #404040;
+}
+td span{
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 9px;
+    margin-left:5px ;
+}
+.view{
+    background-color: #03a9f4;
+}
+.delete{
+    background-color: #e91e63;
+}

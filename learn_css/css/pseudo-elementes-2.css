@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+.parent{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.one::before{
+    content: "";
+    /* width: 20px; */
+    /* background-color: red; */
+    position: absolute;
+    /* height: 20px; */
+    left: -17px;
+    top: 50%;
+    margin-top: -10px;
+    border: solid 9px;
+    border-color: transparent #009688 transparent transparent;
+}
+.one{
+    position: relative;
+    background-color: #eee;
+    float: left;
+    width: calc(100% - 130px);
+    padding: 10px;   
+}
+.one::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    right: -10px;
+    top: 0;
+    background-color: #009688;
+}
+.user{
+    margin :0px 10px;
+    font-size: 49px;
+    background-color: #eee;
+    width: 60px;
+    float: left;
+    text-align: center;
+    padding:10px  10px;
+    
+}

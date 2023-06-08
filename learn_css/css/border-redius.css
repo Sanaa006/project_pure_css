@@ -1,0 +1,8 @@
+div{
+    height: 400px;
+    width: 400px;
+    margin: 50px auto;
+    background-color: black;
+    border-top-right-radius: 30px/30px  ;
+    border-top-left-radius: 10px 10em  ;
+}

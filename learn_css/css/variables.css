@@ -1,0 +1,28 @@
+/* 
+css variable
+-Local variable
+-Global variable
+var(variable name,fallback value)
+*/
+:root{
+    --maincolor:green;
+    --mainpadding:30px;
+}
+.main{
+    background-color: var(--maincolor, black);
+    color: white;
+    padding: var(--mainpadding);
+}
+h2{
+    color: var(--maincolor);
+    background-color: #eee;
+    padding: var(--mainpadding);
+}
+p{
+    border: solid var(--maincolor) 2px;
+    color: var(--maincolor);
+    padding: var(--mainpadding);
+}
+a:hover{
+    color: var(--maincolor);
+}

@@ -1,0 +1,24 @@
+.external-ul{
+    width: 400px;
+    margin: auto;
+}
+.external-ul >li{
+    margin: 20px 0px;
+    background-color: #eee;
+    list-style: none;
+    padding: 10px;
+}
+ol li {
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: white;
+}
+.css-list li{
+    list-style: upper-roman;
+}
+.enternal-ul li{
+    list-style-position: inside;
+    background-color: white;
+    margin: 10px 0;
+    padding: 10px;
+}

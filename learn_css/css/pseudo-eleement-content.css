@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+.parent{
+    margin-bottom: 20px;
+    overflow: hidden;
+    counter-increment: member-counter;
+}
+.one::before{
+    content: attr(data-text);
+    display: none;
+}
+.one:hover::before{
+    display: block;
+}
+.one{
+    position: relative;
+    background-color: #eee;
+    float: left;
+    width: calc(100% - 130px);
+    padding: 10px;   
+}
+.one::after{
+    content: counter(member-counter);
+    position: absolute;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    right: -10px;
+    top: 50%;
+    margin-top: -10px;
+}
+.user{
+    margin :0px 10px;
+    font-size: 49px;
+    background-color: #eee;
+    width: 60px;
+    float: left;
+    text-align: center;
+    padding:10px  10px;
+    
+}

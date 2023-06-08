@@ -1,0 +1,50 @@
+/* 
+flexable box 
+some proprty put in perant and 
+some proprty put in child 
+-display : flex => to start flexable box 
+-flex-direction : row defult value | row reverse | column | column-reverse 
+-flex-wrap: nowrap => defult value | wrap 
+-flex-flow : [flex-diraction] + [flex-wrap]
+-----
+-justfiy contant: flex-start => defult value 
+-align-items:stretch => Defult value 
+-align-contant:stretch => Defult value
+----
+for child
+-flex-grow:0 => Defult value 
+-flex-shrank:1 => Defult value
+-order:0 => Deflut value
+-flex-basis:auto => Defult value
+-flex:[flex-grow] [flex-shrank] [flex-basis] 0 1 auto
+-align-self:auto => Defult value 
+*/
+*{
+    box-sizing: border-box;
+}
+.perant{
+    width: 800px;
+    flex-direction: column-reverse;
+    align-content: space-between;
+    justify-content: end;
+    padding: 20px;
+    background-color: #eee;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.perant div{
+    background-color: red;
+    width: 80px;
+    margin-right: 5px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    /* flex-grow: 0; */
+    /* flex-shrink: 3; */
+    flex: 4;
+   
+}
+.ln{
+    display: inline-block;
+}

@@ -1,0 +1,38 @@
+/* grid
+parent
+-display:grid ||inline-grid 
+-grid-template-columns => [number of columns In] => [px,%,auto,repeat(),mix ]
+-grid-template-rows => [number of row Hight In ] => [px , % ,auto , repeat(),mix]
+-gap:[row gap] [column gap]
+-justfiy-content:
+-align-content
+-grid-template-area:"name area "
+for child
+-grid-column:[column-start] [column-end]
+-grid-row:[row-start] [row-end]
+-minmax => maen min value and max value
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.parent{
+    padding: 10px;
+    height: 500px;
+    margin: 30px auto;
+    background-color: #eee;
+    display: grid;
+    /* grid-template-areas: "head head head head head"; */
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    /* grid-template-rows: repeat(); */
+    /* gap: 10px; */
+}
+.parent div{
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}

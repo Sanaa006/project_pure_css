@@ -1,0 +1,66 @@
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    width: 44ch;
+    animation: typing 2s steps(22), blink .5s step-end  alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    -webkit-animation: typing 2s steps(22), blink .5s step-end  alternate;
+}
+.typing-demo1 {
+    width: 44ch;
+    animation: typing 2s 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    visibility: hidden;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    -webkit-animation: typing 2s 2s steps(22), blink .5s step-end infinite alternate;
+    animation-fill-mode: forwards;
+}
+.typing-demo2 {
+    width: 44ch;
+    animation: typing 2s 4s steps(22) forwards, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    visibility: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    -webkit-animation: typing 2s 4s steps(22) forwards, blink .5s step-end infinite alternate;
+}/* how to center div in css?   */
+.typing-demo3 {
+    width: 44ch;
+    animation: typing 2s 6s steps(22) forwards, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    visibility: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    -webkit-animation: typing 2s 6s steps(22) forwards, blink .5s step-end infinite alternate;
+}
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to{
+        visibility: visible;
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }

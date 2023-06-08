@@ -1,0 +1,39 @@
+/* 
+the margin collapse
+[1] only vartical margin collapse
+[2] Bigger margin win
+[3] margin collapse with element without anything between
+[4] nesting does not prevent collapsing
+*/
+
+
+.perant{
+    width: 800px;
+    height: 500px;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #777;
+}
+ .one,
+ .two{
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+.one{
+    background-color: #aaa;
+}
+.two{
+    background-color: #ddd;
+}
+.up{
+    background-color: red;
+    height: 230px;
+    margin-bottom: 20px;
+}
+.down{
+    background-color: green;
+    height: 230px;
+    margin-top: 40px;
+}

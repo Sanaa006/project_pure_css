@@ -1,0 +1,22 @@
+.perant{
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    padding: 20px;
+    margin: 40px auto;
+    text-align: center;
+    transition: all .5s linear;
+}
+.perant:hover{
+    margin-top: 10px;
+}
+.one{
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    transition: all .5s .5s linear;
+    margin-top: 20px;
+}
+.perant:hover .one{
+    margin-top: 50px;
+}

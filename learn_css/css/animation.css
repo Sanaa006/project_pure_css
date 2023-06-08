@@ -1,0 +1,82 @@
+/* 
+---Animation----
+-keyframes
+-animation-name
+-animation-duration
+ */
+
+*{
+    box-sizing: border-box;
+    margin:0 ;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+div{
+    position: absolute;
+    inset: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    border: dotted 10px black;
+    border-bottom-color: transparent;
+    background-size: cover;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    animation-name: ing;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+div:hover{
+    animation-play-state: paused;
+}
+
+@keyframes ing {
+ 
+    from{
+        transform:  translateX(0px);
+        -webkit-transform:  translateX(0px);
+        -moz-transform:  translateX(0px);
+        -ms-transform:  translateX(0px);
+        -o-transform:  translateX(0px);
+}
+   to{
+    transform:  translate(500px);
+    -webkit-transform:  translate(500px);
+    -moz-transform:  translate(500px);
+    -ms-transform:  translate(500px);
+    -o-transform:  translate(500px);
+}
+}
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit: cover;
+    animation:  rotaring 3s steps(11) cubic-bezier() alternate infinite;
+    -webkit-animation:  rotaring 3s steps(11) cubic-bezier() alternate infinite;
+}
+img:hover{ 
+    animation-play-state: paused;
+}
+
+@keyframes rotaring {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

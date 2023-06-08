@@ -1,0 +1,88 @@
+/* 
+flexable box 
+some proprty put in perant and 
+some proprty put in child 
+-display : flex => to start flexable box 
+-flex-direction : row defult value | row reverse | column | column-reverse 
+-flex-wrap: nowrap => defult value | wrap 
+-flex-flow : [flex-diraction] + [flex-wrap]
+-----
+-justfiy contant: flex-start => defult value 
+-align-items:stretch => Defult value 
+*/
+*{
+    box-sizing: border-box;
+}
+.flex{
+    background-color: #eee;
+    padding: 10px;
+    margin: 20px auto;
+    width: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.flex div{
+    color: white;
+    background-color: red;  
+    text-align: center;
+    width: calc(90% / 3);
+    padding: 20px;
+}
+.flex .one{
+    height: 80px;
+}
+.flex .two{
+    height: 120px;
+}
+.flex .three{
+    margin-left: auto;
+}
+.flaot{
+    background-color: #eee;
+    padding: 10px;
+    margin: 20px auto;
+    width: 800px;
+    overflow: hidden;
+}
+.flaot div{
+    color: white;
+    background-color: red;
+    float: left;
+    margin-left: 10px;
+    width: calc((100%  - 50px)/4);
+    text-align: center;
+    padding: 20px;
+}
+header{
+    width: 100%;
+    padding: 10px;
+}
+header .container{
+    width: 99%;
+    margin: 0px auto;
+}
+header .container nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+header .container nav .logo a img{
+    width: 80px;
+    height: 70px;
+}
+header .container nav ul{
+    list-style: none;
+    display: flex;
+   gap: 20px;
+}
+header .container nav ul li a{
+    text-decoration: none;
+    color: rgb(16, 146, 130);
+}
+header .container nav ul li a:hover{
+    color: black;
+}

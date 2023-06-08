@@ -1,0 +1,45 @@
+/* body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: 30px;
+}
+.green{
+    background-color: green;
+    left: 20px;
+    z-index: 4;
+}
+.red{
+    background-color: red;
+    z-index: 5;
+    left: 40px;
+    top: 20px;
+}
+.yellow{
+    background-color: yellow;
+    z-index: 6;
+    left: 60px;
+    top: 40px;
+}
+.pink{
+    background-color: pink;
+    z-index: 7;
+    left: 80px;
+    top: 60px;
+}
+.blue{
+    background-color: blue;
+    top: -10px;
+    
+    z-index: 3;
+}
+.black{
+    background-color: black;
+    z-index: 1;
+}

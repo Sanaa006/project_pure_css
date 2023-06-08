@@ -1,0 +1,34 @@
+/* pseudo classes */
+.one{
+    background-color: red;
+    color: white;
+}
+.two{
+    background-color: #ffffff;
+    width: 100px;
+    height: 100px;
+}
+a{
+    color: green;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+}
+.ch:checked  {
+    display: none;
+}
+a:visited{
+ color: pink;
+}
+div:empty{
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.15),15px -15px 15px 15px rgba(0, 0, 0, 0.15);
+}
+.in{
+    border:solid 1px red;
+}
+.in:focus{
+    outline: none;
+    border-color: pink;
+}

@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    animation: loading 1.5s linear infinite alternate;   
+}
+.loading div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #e66c95;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+}
+@keyframes loading{
+    0%{
+        transform: translateY(0) rotate(0);
+        -webkit-transform: translateY(0) rotate(0);
+        -moz-transform: translateY(0) rotate(0);
+        -ms-transform: translateY(0) rotate(0);
+        -o-transform: translateY(0) rotate(0);
+}
+    100%{
+        transform: translateY(-50px) rotate(360deg);
+        -webkit-transform: translateY(-50px) rotate(360deg);
+        -moz-transform: translateY(-50px) rotate(360deg);
+        -ms-transform: translateY(-50px) rotate(360deg);
+        -o-transform: translateY(-50px) rotate(360deg);
+}
+}
+
+div .two{
+    animation-delay: .5s;
+}
+div .three{
+    animation-delay: 1s;
+}

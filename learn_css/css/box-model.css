@@ -1,0 +1,18 @@
+/* box-model
+box-sizing
+*/
+.perant{
+    padding: 30px;
+    margin: 30px auto;
+    width: 800px;
+    overflow: hidden;
+    background-color: #aaa;
+}
+.one{
+    background-color: #eee;
+    float: left;
+    width: 400px; 
+    padding: 10px;
+    border: 10px solid red;
+    box-sizing: border-box;
+}

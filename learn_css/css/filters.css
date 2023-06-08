@@ -1,0 +1,20 @@
+/* filters */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+div{
+    width:500px;
+    height: 400px;
+    margin: 20px auto ; 
+}
+
+img{
+    width:500px;
+    height: 400px; 
+    transition: .5s;
+    filter: invert(30%);
+}
+img:hover{
+    filter: invert(0);
+}

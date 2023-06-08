@@ -1,0 +1,57 @@
+/* grid
+parent
+-display:grid ||inline-grid 
+-grid-template-columns => [number of columns In] => [px,%,auto,repeat(),mix ]
+-grid-template-rows => [number of row Hight In ] => [px , % ,auto , repeat(),mix]
+-gap:[row gap] [column gap]
+-justfiy-content:
+-align-items:
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.page{
+    height: 100vh;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas: 
+     "logo logo logo nav nav nav nav nav nav nav"
+     "cont cont cont cont cont cont . side side side "
+     "foot foot foot foot foot foot foot foot foot foot ";
+}
+h3{
+    grid-area: logo;
+    background-color: blue;
+    color: white;
+}
+nav{
+    grid-area: nav;
+    background-color: red;
+    color: white;
+}
+ul{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    align-items: center;
+}
+section{
+    grid-area: cont;
+    background-color: green;
+    color: white;
+}
+aside{
+    grid-area: side;
+    background-color: yellow;
+    color: white;
+}
+footer{
+    grid-area: foot;
+    background-color: black;
+    color: white;
+}

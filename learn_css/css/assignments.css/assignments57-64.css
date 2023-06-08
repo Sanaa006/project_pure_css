@@ -1,0 +1,93 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box ;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.petant{
+  width: 100%;
+  background-color: #eee;
+  padding: 15px 25px;
+  display: grid; 
+  grid-template-areas: 
+   "head1 head1 head1 head1 head2 head2 head3 head3"
+   "cont1 cont1 cont2 cont2 cont2 cont2 head3 head3"
+   "cont1 cont1 cont3 cont3 cont3 cont3 head3 head3"
+   "foot1 foot1 foot2 foot2 foot3 foot3 foot4 foot4";
+  gap: 7px; 
+}
+.petant div{
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: solid #fe3f02 3px;
+  font-size: 0.9em;
+  position: relative;
+}
+.petant div::after{
+ content: "";
+ background-color: #4c4c4c;
+ position: absolute;
+ bottom: 10px;
+ right: 10px;
+ width: 5px;
+ height: 13px;
+ clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 57%, 75% 100%, 28% 100%, 0 56%, 0% 20%);
+ transform: rotateZ(25deg);
+}
+.petant div::before{
+  content: "";
+  background-color: #4c4c4cba;
+  position: absolute;
+  bottom: 10px;
+  right: 17px;
+  width: 5px;
+  height: 13px;
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 57%, 75% 100%, 28% 100%, 0 56%, 0% 20%);
+  transform: rotateZ(25deg);
+ }
+.petant .head1{
+  grid-area: head1;
+}
+.petant .head2{
+  grid-area: head2;
+}
+.petant .head3{
+  grid-area: head3;
+  background-color: #000;
+  color: #fff;
+}
+.petant .cont1{
+  grid-area: cont1;
+}
+.petant .cont2{
+  grid-area: cont2;
+  background-color: #000;
+  color: #fff;
+}
+.petant .cont3{
+  grid-area: cont3;
+}
+.petant .foot1{
+  grid-area: foot1;
+}
+.petant .foot2{
+  grid-area: foot2;
+  background-color: #000;
+  color: #fff;
+}
+.petant .foot3{
+  grid-area: foot3;
+}
+.petant .foot4{
+  grid-area: foot4;
+}
+.petant div .par2 , h5{
+ color:#777;
+ padding: 5px 0;
+}
+.petant div .par1{
+  padding: 10px 0;
+  font-weight: 500;
+  font-weight: 600;
+}

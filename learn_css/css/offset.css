@@ -1,0 +1,37 @@
+#offsetElement {
+    width: 50px;
+    float: left;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    offset:path("M 10,200 Q 200,200 260,80 Q 290,20 400,50 Q 300,100 400,200 ") auto 45deg ;
+    animation: move 5s linear infinite alternate;
+  }
+  @keyframes move {
+    from {
+      offset-distance: 0%;
+    }
+  
+    to {
+      offset-distance: 100%;
+    }
+  }
+  #ffsetElement {
+    width: 50px;
+   float: left;
+   margin-left:30px ;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    offset: path("M200,200 C200,500 180,-100 180,200") auto 45deg ;
+    animation: move 5s linear infinite alternate;
+}
+@keyframes move {
+    from {
+      offset-distance: 100%;
+    }
+  
+    to {
+      offset-distance: 0%;
+    }
+  }

@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div{
+    width: 60%;   
+    background-color: #eeeeee;
+    padding: 30px;
+    line-height: 1.7 ;
+    font-size: 1.5rem;
+    border: solid 4px;
+    border-color: #f44336 #2196f3;
+    position: relative;
+}  
+span{
+    position: absolute;
+    background-color:#2196f3;
+    padding: 0px 15px;
+    color: white;
+}
+.top-left{
+    top: -25px;
+    left:-25px;
+    border-right: solid 3px #f44336;
+}
+.bottom-left{
+    bottom: -25px;
+    left:-25px;
+    border-right: solid 3px #f44336;
+}
+.top-right{
+    top: -25px;
+    right:-25px;
+    border-left: solid 3px #f44336;
+}
+.bottom-right{
+    bottom: -25px;
+    right:-25px;
+    border-left: solid 3px #f44336;    
+}
